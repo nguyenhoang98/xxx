@@ -1,0 +1,70 @@
+{
+  "name": "pms-bo",
+  "version": "1.6.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "node server",
+    "build": "next build",
+    "build:uat": "cross-env NODE_ENV=production ENV=uat next build",
+    "build:production": "cross-env NODE_ENV=production ENV=production next build",
+    "start:uat": "cross-env NODE_ENV=production ENV=uat node server",
+    "start:production": "cross-env NODE_ENV=production ENV=production node server",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
+  },
+  "dependencies": {
+    "@ant-design/icons": "4.6.2",
+    "@next/bundle-analyzer": "10.1.3",
+    "@reduxjs/toolkit": "1.5.1",
+    "@tailwindcss/postcss7-compat": "2.0.2",
+    "@zeit/next-less": "1.0.1",
+    "antd": "4.15.1",
+    "antd-dayjs-webpack-plugin": "1.0.6",
+    "autoprefixer": "9.8.6",
+    "axios": "0.21.1",
+    "babel-plugin-import": "1.13.3",
+    "babel-plugin-macros": "3.0.1",
+    "dayjs": "1.10.4",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "1.0.6",
+    "less": "3.12.2",
+    "nanoid": "3.1.20",
+    "next": "10.0.5",
+    "null-loader": "4.0.1",
+    "postcss": "7.0.35",
+    "postcss-import": "12.0.1",
+    "postcss-preset-env": "6.7.0",
+    "query-string": "7.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-error-boundary": "3.1.0",
+    "react-hotkeys-hook": "3.0.1",
+    "react-redux": "7.2.3",
+    "styled-components": "5.2.1",
+    "swr": "0.5.4",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "twin.macro": "2.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "9.0.0",
+    "cross-env": "7.0.3",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-nextjs": "1.0.6",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-html": "5.0.5",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.2.0",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "prettier": "1.19.1"
+  }
+}
